@@ -10,12 +10,27 @@
 \end{center}
 
 \section{Completitud}
-
+El algoritmo genético no ofrece completitud, pero a veces es la única aproximación en la práctica.
+No está garantizado que se encuentre una solución.
 
 \section{Optimalidad}
-
+\par Defino la función fitness como el número de jaques que existen en el individuo.
+Un cromosoma será mejor cuanto menor sea el valor de esta función. El \texttt{AG} proporciona
+la solución con menor valor y como he analizado en los casos de ajuste comprendidos
+entre el valor 1 hasta el 76 puedo verificar que existe una función fitness igual a ``0''
+que por tanto son soluciones óptimas con los valores recomendados en la sección
+ ``\textbf{4. Manual de asignación}''. El resto de casos, no puedo concluir que se obtengan 
+soluciones óptimas, además, he verificado que en el caso de ajuste \texttt{80}, con mis parámetros 
+analizados no la encuentra puesto que la solución es un jaque.
 
 \section{Complejidad en tiempo}
-
+La complejidad del tiempo es una función que describe cualitativamente el tiempo de ejecución de un algoritmo. 
+Modificando la probabilidad de cruce al menor valor que no emperore el resultado, 
+hago que requiera menos recursos y tarde menos. Por tanto, mi mejor solución sería
+seleccionar $p_c=$ 0.8 dentro de los valores ajustables del ajuste de parámetros inicial.
 
 \section{Complejidad en espacio}
+La codificación define el tamaño del espacio de búsqueda y el tipo de operadores. 
+El sistema basado en AG usa poca memoria, por lo general una cantidad constante. 
+La complejidad en espacio debería estar caracterizada por el tamaño de la población (entre otros). Por tanto,
+selecciono el valor $TP=100$ ya que cuanta menos población, menor la complejidad.
