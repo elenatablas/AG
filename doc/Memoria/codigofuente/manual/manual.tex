@@ -1,5 +1,5 @@
-%%%%%%%%%%%%  Tabla que muestra los valores fitness  %%%%%%%%%%%%
-
+%%%%%%%%%%%%  Manual de asignación  %%%%%%%%%%%%
+\newpage
 \begin{center}
 	{\fboxrule=4pt \fbox{\fboxrule=1pt
 		\fbox{\LARGE{\bfseries 4. Manual de asignación}}}} \\
@@ -8,3 +8,29 @@
 	\setcounter{section}{0}
 	\rule{15cm}{0pt} \\
 \end{center}
+
+\par Con las decisiones descritas en el análisis previo ``\textbf{P1.2-Fundamentos-Prácticos.pdf}''
+y a partir del ajuste de la sección anterior, construyo un manual que sirve al usuario final a decidir, para
+un problema dado, los valores concretos de parámetros y operadores que debe utilizar.
+
+\par \textbf{Recomendaciones} para la asignación de valores a parámetros para que el sistema tenga un 
+comportamiento aceptable:
+\par Al resolver un caso concreto del problema de las \texttt{n-reinas} le recomiendo los 
+siguientes valores para los parámetros que le pedirá el sistema con el fin de obtener buenos resultados.
+Algunos valores recomendados van en función del valor de \texttt{n} (nº de reinas: tamaño del caso)
+correspondiente al parámetro 1º:
+\begin{itemize}
+	\item Valor para el \underline{parámetro 2º}: \texttt{100} (valor recomendado)
+ 	\item Valor para el \underline{parámetro 3º}: \texttt{10000} (valor recomendado)
+  	\item Valor para el \underline{parámetro 4º}: \texttt{TOUR} (valor recomendado)
+  	\item Valor para el \underline{parámetro 5º}: \texttt{ONEP} (valor recomendado)
+  	\item Valor para el \underline{parámetro 6º}: \texttt{FLIP} (valor recomendado)
+  	\item Valor para el \underline{parámetro 7º}: \texttt{0.8} (valor recomendado)
+  	\item Valor para el \underline{parámetro 8º}: 
+	\begin{itemize}
+    	\item Si $1 <= n <= 16$ : \texttt{0.075} (valor recomendado)
+     	\item Si $17 <= n <= 20$ : \texttt{0.05} (valor recomendado)
+      	\item Si $21 <= n <= 40$ : \texttt{0.025} (valor recomendado)
+  		\item Si $40 <= n <= \infty$ : \texttt{0.0125} (valor recomendado)
+   	\end{itemize}
+\end{itemize}
