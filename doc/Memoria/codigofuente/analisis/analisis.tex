@@ -1,10 +1,74 @@
 %%%%%%%%%%%%  Análisis de las pruebas de ajuste  %%%%%%%%%%%%
 
+\newpage
 \begin{center}
 	{\fboxrule=4pt \fbox{\fboxrule=1pt
 		\fbox{\LARGE{\bfseries 3. Análisis de las pruebas de ajuste}}}} \\
 	\addcontentsline{toc}{chapter}{3. Análisis de las pruebas de ajuste}
 	\setcounter{chapter}{3}
 	\setcounter{section}{0}
+	\label{ch:prueba_ajuste}
 	\rule{15cm}{0pt} \\
 \end{center}
+
+\par Una vez diseñado/construido el \texttt{AG} para resolver el problema de las \texttt{n-reinas}, 
+debo realizar el ajuste de parámetros. A continuación describo los pasos para este ajuste:
+
+\begin{itemize}
+	\item Parámetros del \texttt{AG}.
+	\begin{itemize}
+		\item Parámetros con valores fijos:
+		\begin{itemize}
+			\item Tamaño de la población (\texttt{TP}) = 100.
+			\item Número de generaciones (\texttt{NG}) = 10000.
+			\item Método de selección (\texttt{selector}) = TOUR.
+			\item Operador de cruce (\texttt{cruce}) = ONEP.
+			\item Operación de mutación (\texttt{mutacion}) = FLIP.
+			\item $p_m =$ 0.8.
+		\end{itemize}
+		\item Parámetros ajustables con valores:
+		\begin{itemize}
+			\item $p_m$ con dos posibles valores \{0.005, 0.0125\}.
+		\end{itemize}
+	\end{itemize}
+	\item Conjunto de ``casos de ajuste'': 20, ..., 75 reinas.
+\end{itemize}
+
+\par En la sección anterior he resuelto todos los casos utilizando todas las combinaciones de valores.
+\par Las decisiones están guiadas por los resultados y fundamentadas por los cuatro criterios
+\texttt{Completitud}, \texttt{Optimalidad}, \texttt{Complejidad en Tiempo} y \texttt{Complejidad en Espacio} que explicaré en 
+la sección ``\textbf{6. Comportamiento global}''. 
+
+\par Con el comportamiento que obsevo, realizo una generalización del proceso de asignación de valores
+a parámetros y casos a resolver:
+\begin{enumerate}
+	\item Busco la \texttt{optimalidad}: marco de color \colorbox{green!25}{verde} las combinaciones de valores que obtienen el valor
+	 ``0'' para todos los casos resueltos.
+	\item Valores de $p_m$ para tamaños de problemas en los que se obtiene solución óptima.
+	\begin{figure}[H]
+		\centering
+			\begin{tabular}{|c|c|}
+				\hline
+				\rowcolor{blue!25} \textbf{$p_m$} &\textbf{n-reinas} \\ \hline
+				0.005& 21-35, 37-40, 42, 43, 48, 49, 51, 53-56, 59-63, 65, 66, 68, 70-75\\ \hline
+				0.0125& 20-23, 25-75 \\ \hline
+				0.005 y 0.0125& 21-23, 25-36, 37-40, 42, 43, 48, 49, 51, 53-56, 59-63, 65, 66, 68, 70-75\\ \hline
+				\end{tabular}
+		\caption{Valores de $p_m$ para tamaños de problemas en los que se obtiene solución óptima.}
+		\label{fig:valores}
+	\end{figure}
+	\newpage	
+	\item En la columna $p_m = 0.0125$ se observan más soluciones ``0'' que en la columna $p_m = 0.005$. Aunque,
+	para los casos que no tienen ``0'' tienen el mismo número de ``jaques''. Por tanto, el $p_m = 0.0125$ tiene mejor 
+	comportamiento.
+\end{enumerate}
+
+\par \textbf{Resumiendo}: El sistema para \texttt{10000} generaciones, con operador de cruce \\
+\texttt{OnePointCrossover}, operador de mutación
+\texttt{Flipmutator}, con tamaño de población \texttt{100}, método de selección TOUR, $p_m = 0.8$
+y utilizando los casos para ajuste de 20-75, tiene mejor comportamiento según los criterior indicados en el
+análisis con  \texttt{$p_m = 0.005$} para \texttt{24 reinas} y \texttt{$p_m = 0.0125$} para \texttt{20-23 y 25-75 reinas}. 
+\par Para este análisis/ajuste, puedo concluir que los distintos parámetros definidos con valores fijos
+inducen que conforme crece el problema (mayor número de reinas) el valor de \texttt{$p_m$} debe decrecer.
+\par He obtenido las mejores combinaciones de operadores genéticos-valores de parámetros que hacen que el \texttt{AG} tenga
+un comportamiento ``óptimo'', ``bueno'' o ``aceptable''.
