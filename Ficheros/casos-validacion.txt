@@ -3,17 +3,17 @@ Problema de las 5 reinas mediante AG
 _____________________________________
 
 
-Valores de los parámetros: (100, 10000, TOUR, ONEP, FLIP, 0.8, 0.0125)
+Valores de los parï¿½metros: (100, 10000, TOUR, ONEP, FLIP, 0.8, 0.075)
 
-El sistema encuentra la solución 
+El sistema encuentra la soluciï¿½n 
 
-- R - - - 
-- - - - R 
 - - R - - 
-R - - - - 
+- - - - R 
+- R - - - 
 - - - R - 
+R - - - - 
 
-con 0 jaques. 
+con 0 jaques.
 
  
 
@@ -21,9 +21,9 @@ Problema de las 6 reinas mediante AG
 _____________________________________
 
 
-Valores de los parámetros: (100, 10000, TOUR, ONEP, FLIP, 0.8, 0.0125)
+Valores de los parï¿½metros: (100, 10000, TOUR, ONEP, FLIP, 0.8, 0.075)
 
-El sistema encuentra la solución 
+El sistema encuentra la soluciï¿½n 
 
 - - - R - - 
 R - - - - - 
@@ -32,7 +32,7 @@ R - - - - -
 - - - - - R 
 - - R - - - 
 
-con 0 jaques. 
+con 0 jaques.  
 
  
 
@@ -40,19 +40,19 @@ Problema de las 7 reinas mediante AG
 _____________________________________
 
 
-Valores de los parámetros: (100, 10000, TOUR, ONEP, FLIP, 0.8, 0.0125)
+Valores de los parï¿½metros: (100, 10000, TOUR, ONEP, FLIP, 0.8, 0.075)
 
-El sistema encuentra la solución 
+El sistema encuentra la soluciï¿½n 
 
+- - - - - R - 
+- R - - - - - 
+- - - - R - - 
 R - - - - - - 
 - - - R - - - 
 - - - - - - R 
 - - R - - - - 
-- - - - - R - 
-- R - - - - - 
-- - - - R - - 
 
-con 0 jaques. 
+con 0 jaques.
 
  
 
@@ -60,35 +60,35 @@ Problema de las 25 reinas mediante AG
 _____________________________________
 
 
-Valores de los parámetros: (100, 10000, TOUR, ONEP, FLIP, 0.8, 0.0125)
+Valores de los parï¿½metros: (100, 10000, TOUR, ONEP, FLIP, 0.8, 0.025)
 
-El sistema encuentra la solución 
+El sistema encuentra la soluciï¿½n 
 
-- - - - - - - - - - - - - - - - - - R - - - - - - 
-- - - - - - - - - - - - - - - - R - - - - - - - - 
-- - - - - R - - - - - - - - - - - - - - - - - - - 
-- - R - - - - - - - - - - - - - - - - - - - - - - 
-- - - - - - - - - - R - - - - - - - - - - - - - - 
-- - - - - - - - - - - - - - - R - - - - - - - - - 
+- - - - - - - - - - - - - R - - - - - - - - - - - 
 - - - - - - - R - - - - - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - - - R - - - - - 
-- - - - - - - - R - - - - - - - - - - - - - - - - 
-- R - - - - - - - - - - - - - - - - - - - - - - - 
-- - - - - - - - - - - - R - - - - - - - - - - - - 
-R - - - - - - - - - - - - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - - - - - R - - - 
-- - - - - - - - - - - - - - - - - - - - - - - - R 
-- - - - - - - - - R - - - - - - - - - - - - - - - 
-- - - - - - R - - - - - - - - - - - - - - - - - - 
-- - - - - - - - - - - - - - - - - - - - R - - - - 
-- - - - - - - - - - - - - - R - - - - - - - - - - 
-- - - - - - - - - - - - - - - - - - - - - - - R - 
-- - - - - - - - - - - - - R - - - - - - - - - - - 
-- - - - R - - - - - - - - - - - - - - - - - - - - 
+- - - - - R - - - - - - - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - R - - - - - - - 
-- - - R - - - - - - - - - - - - - - - - - - - - - 
-- - - - - - - - - - - R - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - - - - - - R - - 
+- - - R - - - - - - - - - - - - - - - - - - - - - 
+- - - - - - R - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - R - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - R - - - - 
+- - - - - - - - - - - - - - - R - - - - - - - - - 
+R - - - - - - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - R - - - - - - - - - - - - - - 
+- - - - R - - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - R - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - - - - - R 
+- - R - - - - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - R - - - - - - 
+- - - - - - - - R - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - - - - R - 
+- - - - - - - - - - - - R - - - - - - - - - - - - 
+- - - - - - - - - R - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - R - - - - - - - - 
+- R - - - - - - - - - - - - - - - - - - - - - - - 
 
 con 0 jaques. 
 
@@ -98,9 +98,9 @@ Problema de las 70 reinas mediante AG
 _____________________________________
 
 
-Valores de los parámetros: (100, 10000, TOUR, ONEP, FLIP, 0.8, 0.0125)
+Valores de los parï¿½metros: (100, 10000, TOUR, ONEP, FLIP, 0.8, 0.0125)
 
-El sistema encuentra la solución 
+El sistema encuentra la soluciï¿½n 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - R - 
 - - - - - - - - - - - - - R - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -181,9 +181,9 @@ Problema de las 76 reinas mediante AG
 _____________________________________
 
 
-Valores de los parámetros: (100, 10000, TOUR, ONEP, FLIP, 0.8, 0.0125)
+Valores de los parï¿½metros: (100, 10000, TOUR, ONEP, FLIP, 0.8, 0.0125)
 
-El sistema encuentra la solución 
+El sistema encuentra la soluciï¿½n 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - R - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - - - - - R - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -270,9 +270,9 @@ Problema de las 80 reinas mediante AG
 _____________________________________
 
 
-Valores de los parámetros: (100, 10000, TOUR, ONEP, FLIP, 0.8, 0.0125)
+Valores de los parï¿½metros: (100, 10000, TOUR, ONEP, FLIP, 0.8, 0.0125)
 
-El sistema encuentra la solución 
+El sistema encuentra la soluciï¿½n 
 
 - - - - - - - - - - - - - - - - - - - - - - R - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - - R - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
